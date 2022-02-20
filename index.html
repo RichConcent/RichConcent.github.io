@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>home page</h1>
+    <!-- emmet を学ぶ -->
+
+    #page>main.logo
+
+    <div id="page">
+        <main class="logo"></main>
+    </div>
+
+    #page>div.logo+ul#navigation>li*5>a{Item $}
+
+    <div id="page">
+        <div class="logo"></div>
+        <ul id="navigation">
+            <li><a href="">Item 1</a></li>
+            <li><a href="">Item 2</a></li>
+            <li><a href="">Item 3</a></li>
+            <li><a href="">Item 4</a></li>
+            <li><a href="">Item 5</a></li>
+        </ul>
+    </div>
+
+    <!-- マルチカーソル を学ぶ -->
+    <ul class="multi">
+        <li class="fluit">いちご</li>
+        <li class="fluit">りんご</li>
+        <li class="fluit">みかん</li>
+        <li class="fluit">ばなな</li>
+        <li class="fluit">ぶどう</li>
+    </ul>
+
+<!-- 「Ctrl + Alt + 矢印」で複数選択してCopyなど -->
+いちご
+りんご
+みかん
+ばなな
+ぶどう
+
+<!-- 「Shift + Alt + マウス)」で複数縦の列だけ削除などができる -->
+<ul class="multi">
+    <li class="fluit">いちご</li>
+    <li class="fluit">りんご</li>
+    <li class="fluit">みかん</li>
+    <li class="fluit">ばなな</li>
+    <li class="fluit">ぶどう</li>
+</ul>
+
+
+<!-- 「CNTL + D」で同じ選択した内容を選択できる -->
+<!-- 「CNTL ＋SHIFT + L」で同じ選択した内容をすべて選択できる -->
+
+<ul>
+    <li>いちご</li>
+    <li>りんご</li>
+    <li>みかん</li>
+</ul>
+
+
+<!-- Insert Numbers「CNTL + ALT + N」でマルチカーソル個所に順に数値を入れられる -->
+
+<ul>
+    <li id="item0">いちご</li>
+    <li id="item1">りんご</li>
+    <li id="item2">みかん</li>
+</ul>
+
+<!-- Insert Numbers「CNTL + ALT + N」ででたウインドウに「%03d:5:2」といれると -->
+<!-- defaultは「%d:0:1」で「format:start:step」で指示可能 「dはデシマルで数値で、03は桁数を指定」 -->
+
+<ul>
+    <li id="item005">いちご</li>
+    <li id="item007">りんご</li>
+    <li id="item009">みかん</li>
+</ul>
+
+<!-- エディタレイアウト -->
+Viewから
+ファイル開くときに並べたり
+Ctrl + 1 や 2でカーソルの切り替えできる<br>
+逆に開いているものより1つ大きい数値を入れると、ウインドウを増やすことができる
+<br><br>
+
+<!-- 統合ターミナルでコマンドライン作業をしよう -->
+通常、WindowsはPowerSheelでMacはターミナルを開いて、コンパイルやビルド作業をすすめていく。
+<br>
+VS Codeにはターミナルの機能が搭載されている<br>
+Viewメニューからターミナルを開く
+右上のところのターミナルが開いている(powershellなど)が、ほかのターミナルに変更することも可能
+ターミナルのゴミ箱を押して、1回終了しないと切り替えが完了しない
+ターミナルはVS Codeで開いているフォルダなどでディレクトリを選択できる
+<br>
+Node.jsやBootstrapなどをインストールしてシームレスな開発環境を作りましょう
+
+<br><br><br>
+
+<!-- gitについて -->
+gitはVersion管理システム
+gitを操作するためのクライアントソフトがある→Sourcetreeなどを使う
+VSCode にはgitのクライアント機能というものが内臓されている。
+まずはgit本体をインストールする必要あり
+view → SCM → 最初使うにはリポジトリというものの初期化が必要(Initialize Repository) <br>
+Source Controlで実際にgitにコミットしたいファイルを選んでいく
+→ファイルを押して右に出てくるプラスのボタンを押していく→ステージされている変更に移動してその上のテキストボックスに変更内容を書き込む <br>
+初回はGitのユーザーネームとEmailを設定してくださいと言われる。
+
+
+
+
+</body>
+
+</html>
